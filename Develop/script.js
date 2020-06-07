@@ -1,5 +1,8 @@
 // Assignment code here
 
+var characters = prompt("How many characters would you like your password to be?")
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -9,7 +12,14 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
+
+
+
+
+
   passwordText.value = password;
+
+  
 
 }
 
