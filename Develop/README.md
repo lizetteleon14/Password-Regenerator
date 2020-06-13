@@ -21,7 +21,7 @@
             </p>
     <header>
     <section>
-      <img src="img src=./assets/images/screenshot.jpg">
+      <img src="./assets/images/screenshot.jpg">
     </section>
     <section>
         <p>
