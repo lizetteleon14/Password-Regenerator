@@ -58,5 +58,20 @@ function generatePassword() {
       passwordCharacters = passwordCharacters.concat(upperCase)
     }
 
+      // Selecting random characters from the array to create a password
+      var randomPassword = ""
+      
+      for (var i = 0; i < confirmLength; i++) {
+        randomPassword = randomPassword + passwordCharacters[Math.floor(Math.random() * passwordCharacters.length)];
+        console.log(randomPassword)
+      }
+      return randomPassword;
+}
 
+// Password is generated upon clicking the generate password option
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
 }
